@@ -2,13 +2,13 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
-export interface LinkActivo {
+export interface LinkProps {
     href: string;
     name: string;
   }
   
 
-export default function ActiveLink({ href, name }:LinkActivo) {
+export default function ActiveLink({ href, name }:LinkProps) {
   const pathnName = usePathname()
   const isActive = pathnName === href
 
