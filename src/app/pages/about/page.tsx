@@ -4,7 +4,7 @@ export default function About() {
     return (
         <>
             <Header/>
-            <h1 className="text-white">Página About</h1>
+            <h1 className="text-white">Page About</h1>
         </>
     )
 }

@@ -4,7 +4,7 @@ export default function Contacts() {
     return (
         <>
             <Header/>
-            <h1 className="text-white">Pagina de Contatos</h1>
+            <h1 className="text-white">Page contacts</h1>
         </>
     )
 }

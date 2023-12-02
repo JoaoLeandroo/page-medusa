@@ -4,4 +4,10 @@
 
 body {
     background-color: #1A1B2B;
+    overflow-x: hidden;
+}
+
+.medusa-background {
+    background: rgb(37,138,47);
+    background: radial-gradient(circle, rgba(37,138,47,1) 26%, rgba(26,27,43,1) 65%);
 }
