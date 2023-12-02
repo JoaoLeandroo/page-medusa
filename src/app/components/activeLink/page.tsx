@@ -2,7 +2,7 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
-export interface LinkProps {
+interface LinkProps {
     href: string;
     name: string;
   }
