@@ -7,7 +7,7 @@ interface linkActivo {
     name: string;
 }
 
-export default function ActiveLink({ href, name }: linkActivo) {
+export const ActiveLink = ({ href, name }: linkActivo) => {
     const pathnName = usePathname()
     const isActive = pathnName === href
     return(
@@ -18,3 +18,6 @@ export default function ActiveLink({ href, name }: linkActivo) {
             </Link>
     )
 }
+
+
+export default ActiveLink
