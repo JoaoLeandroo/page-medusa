@@ -1,10 +1,10 @@
 "use client"
 
 import Image from "next/image";
-// import LinkActivo from "../activeLink/page";
 import Link from "next/link";
 
 export default function Header() {
+
   return (
     <header className="w-screen h-[80px] mt-[50px] relative z-50">
       <div className="max-w-[1920px] w-full h-full m-auto flex items-center">
@@ -18,11 +18,11 @@ export default function Header() {
           />
         </div>
         <div className="ml-14 flex gap-5 max_1024:ml-3 max_1024:gap-1 max_1024:mt-10">
-          <Link className="w-[120px] h-8 flex items-center justify-center text-white uppercase font-semibold p-3 ease-in-out duration-300  hover:bg-[#120A2A] hover:rounded-3xl" href="/">Gallery</Link>
-          <Link className="w-[120px] h-8 flex items-center justify-center text-white uppercase font-semibold p-3 ease-in-out duration-300  hover:bg-[#120A2A] hover:rounded-3xl" href="/pages/about">About</Link>
-          <Link className={`w-[120px] h-8 flex items-center justify-center text-white uppercase font-semibold p-3 ease-in-out duration-300  hover:bg-[#120A2A] hover:rounded-3xl`} href="/pages/contacts">Contacts</Link>
+          <Link className="w-[120px] h-8 flex items-center justify-center text-white uppercase font-semibold p-3 ease-in-out duration-100 hover:bg-[#120A2A] hover:rounded-3xl hover:border-[3px] border-solid border-[#258A2F] rounded-3xl" href="/">Gallery</Link>
+          <Link className="w-[120px] h-8 flex items-center justify-center text-white uppercase font-semibold p-3 ease-in-out duration-100 hover:bg-[#120A2A] hover:rounded-3xl hover:border-[3px] border-solid border-[#258A2F] rounded-3xl" href="/pages/about">About</Link>
+          <Link className="w-[120px] h-8 flex items-center justify-center text-white uppercase font-semibold p-3 ease-in-out duration-100 hover:bg-[#120A2A] hover:rounded-3xl hover:border-[3px] border-solid border-[#258A2F] rounded-3xl" href="/pages/contacts">Contacts</Link>
         </div>
       </div>
-    </header>
+    </header> 
   );
 }
