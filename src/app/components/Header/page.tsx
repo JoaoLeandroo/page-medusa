@@ -1,5 +1,8 @@
+"use client"
+
 import Image from "next/image";
-import ActiveLink from "../activeLink/page";
+// import LinkActivo from "../activeLink/page";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -15,9 +18,9 @@ export default function Header() {
           />
         </div>
         <div className="ml-14 flex gap-5 max_1024:ml-3 max_1024:gap-1 max_1024:mt-10">
-          <ActiveLink name="Gallery" href={"/"} />
-          <ActiveLink name="About" href={"/pages/about"} />
-          <ActiveLink name="Contacts" href={"/pages/contacts"} />
+          <Link className="w-[120px] h-8 flex items-center justify-center text-white uppercase font-semibold p-3 ease-in-out duration-300  hover:bg-[#120A2A] hover:rounded-3xl" href="/">Gallery</Link>
+          <Link className="w-[120px] h-8 flex items-center justify-center text-white uppercase font-semibold p-3 ease-in-out duration-300  hover:bg-[#120A2A] hover:rounded-3xl" href="/pages/about">About</Link>
+          <Link className={`w-[120px] h-8 flex items-center justify-center text-white uppercase font-semibold p-3 ease-in-out duration-300  hover:bg-[#120A2A] hover:rounded-3xl`} href="/pages/contacts">Contacts</Link>
         </div>
       </div>
     </header>
