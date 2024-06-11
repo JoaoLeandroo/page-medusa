@@ -1,4 +1,4 @@
-import Header from "@/app/components/Header/page"
+import Header from "@/app/components/Header/Header"
 
 export default function Contacts() {
     return (

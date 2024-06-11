@@ -1,14 +1,7 @@
-"use client"
-
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
-export default function Header(href:string) {
-
-    const pathnName = usePathname()
-    const isActive = pathnName === href
-    console.log(isActive)
+export default function Header() {
 
   return (
     <header className="w-screen h-[80px] mt-[50px] relative z-50">
